@@ -1,0 +1,129 @@
+html,
+body {
+    height: 100%;
+    background-color: #000000;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input {
+    color: #fff; 
+}
+
+::placeholder { 
+    color: #4b4f54;
+    opacity: 1; /* Firefox */
+    left: ;
+}
+
+.form-login {
+    position: relative;
+    width: 482px;
+    height: 341px;
+    
+    background: #1A1715;
+}
+
+.title-sign {
+    position: absolute;
+    width: 106px;
+    height: 35px;
+    right: 329px;
+    top: 34px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#inputEmail {
+    position: absolute;
+    width: 358px;
+    left: 62px;
+    top: 144px;
+
+    border: 1px solid #4054B2;
+
+    font-family:'Red Hat Text';
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 19px;
+
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #4054B2 1px;
+    padding: 3px 10px;
+}
+
+#inputPassword {
+    position: absolute;
+    width: 358px;
+    left: 62px;
+    top: 198px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #4054B2 1px;
+    padding: 3px 10px;
+}
+
+#btnLogin {
+    position: absolute;
+    width: 358px;
+    height: 44px;
+    left: 542px;
+    top: 452px;
+
+    background: #4054B2;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#labelSignUp{
+    position: absolute;
+    left: 538px;
+    top: 504px;
+    
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+}

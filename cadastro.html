@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+
+<body class="container" style="margin-top: 50px;" >
+
+    <h5 id="status"></h5>
+
+    <h1 class="text-center" style="color: black;">Cadastro</h1>
+
+    <form class="form">
+
+    <div style="display: inline;">    
+
+         <div class="form-group" style="float: left; margin-left: 200px;">
+            <label for="lbl_name" style="color: black;">Nome</label>
+            <input type="text" id="name" class="form-control" style="width: 300px;" maxlength="45"
+                placeholder="Ex: Felipe Schorles" required />
+        </div>
+
+        <div class="form-group" style="float: left; margin-left: 180px;">
+            <label for="lbl_email" style="color: black;">E-mail</label>
+            <input id="email" type="text" class="form-control" style="width: 300px;" maxlength="45" 
+                placeholder="Ex: felipe@schorles.com.br" required />
+        </div>
+
+    </div> 
+
+    
+    <div style="display: inline;"> 
+
+         <div class="form-group" style="float: left; margin-left: 350px;">
+            <label for="lbl_pass" style="color: black;">Senha</label>
+            <input id="pass" type="password" class="form-control" style="width: 200px;" maxlength="30" required />
+        </div>
+
+        <div class="form-group" style="float: left; margin-left: 100px;">
+            <label for="lbl_confirmpass" style="color: black;">Confirme a Senha</label>
+            <input id="confirmpass" type="password" class="form-control" style="width: 200px;" maxlength="30" required />
+        </div>
+
+    </div>
+
+    <button class="btn btn-primary" style="float: left; margin-bottom: 20px; margin-left: 550px;" id="submit">Salvar</button>
+
+    </form>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
