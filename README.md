@@ -13,3 +13,4 @@ Aplicação de cadatro e login
 - Figma - para protótipos
 - Utilizar função XMLHttpRequest
 - Mecanismo de Request e Response
+- Comunicação com API
