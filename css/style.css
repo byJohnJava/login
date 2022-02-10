@@ -1,129 +1,93 @@
-html,
-body {
-    height: 100%;
-    background-color: #000000;
+body{
+    background-color: #626262;
 }
 
-.container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-input {
-    color: #fff; 
-}
-
-::placeholder { 
-    color: #4b4f54;
-    opacity: 1; /* Firefox */
-    left: ;
-}
-
-.form-login {
-    position: relative;
-    width: 482px;
-    height: 341px;
-    
-    background: #1A1715;
-}
-
-.title-sign {
+.login{
+    overflow: hidden;
+    background-color: #5b77f4;
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
     position: absolute;
-    width: 106px;
-    height: 35px;
-    right: 329px;
-    top: 34px;
-
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-
-    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
 }
 
-#inputEmail {
+.login::before, .login::after{
+    content: "";
     position: absolute;
-    width: 358px;
-    left: 62px;
-    top: 144px;
-
-    border: 1px solid #4054B2;
-
-    font-family:'Red Hat Text';
-    font-style: normal;
-
-    font-size: 14px;
-    line-height: 19px;
-
-    background-color: transparent;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #4054B2 1px;
-    padding: 3px 10px;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
 }
 
-#inputPassword {
+.login::before{
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba(24, 215, 240, 0.2);
+    animation: wawes 6s infinite linear;
+}
+
+.login::after{
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba(24, 215, 240, 0.2);
+    animation: wawes 7s infinite;
+}
+
+.login > input {
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 15px -10px;
+    outline: none !important;
+}
+
+.login > button {
+    cursor: pointer;
+    color: rgba(24, 215, 240);
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 300ms;
+}
+
+.login > button:hover {
+    background-color: #626262;
+    color: aliceblue;
+}
+
+@keyframes wawes {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
     position: absolute;
-    width: 358px;
-    left: 62px;
-    top: 198px;
-
-    font-family: 'Red Hat Text';
-    font-style: normal;
-
-    font-size: 14px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-
-    background-color: transparent;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #4054B2 1px;
-    padding: 3px 10px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
 }
 
-#btnLogin {
-    position: absolute;
-    width: 358px;
-    height: 44px;
-    left: 542px;
-    top: 452px;
-
-    background: #4054B2;
-
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-
-#labelSignUp{
-    position: absolute;
-    left: 538px;
-    top: 504px;
-    
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    
-    color: #FFFFFF;
-}
